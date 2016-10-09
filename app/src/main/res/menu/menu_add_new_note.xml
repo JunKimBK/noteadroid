@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dut.note.ui.addNote.AddNewNote">
+
+    <item
+        android:id="@+id/action_image"
+        android:icon="@drawable/ic_crop_original_white_48dp"
+        android:orderInCategory="1"
+        android:title="Add Image"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save_new_node"
+        android:icon="@drawable/ic_done_white_48dp"
+        android:orderInCategory="100"
+        android:title="Done"
+        app:showAsAction="always" />
+</menu>

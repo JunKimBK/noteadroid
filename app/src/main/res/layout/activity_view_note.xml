@@ -1,0 +1,170 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dut.note.ui.addNote.AddNewNote">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <com.dut.note.ui.view.ImageStreamView
+                android:id="@+id/imageview_view_note"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/view_note_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/title_hint"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/title_blue"
+                android:textColorHint="@color/title_blue"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:textStyle="bold" />
+
+            <com.dut.note.ui.view.LinedEditText
+                android:id="@+id/view_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_content"
+                android:inputType="none"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:textIsSelectable="true" />
+            <com.dut.note.ui.nonScrollListview.NonScrollListView
+                android:id="@+id/view_note_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:divider="@null">
+            </com.dut.note.ui.nonScrollListview.NonScrollListView>
+
+            <View
+                android:id="@+id/view_note_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/divider" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/view_note_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/add_calendar_image"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/view_note_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/calendar_hint"
+                    android:inputType="date"
+                    android:padding="12dp"
+                    android:textSize="@dimen/abc_text_size_medium_material" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_note_layout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/add_alert_image"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/view_note_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="@android:integer/config_longAnimTime"
+                    android:hint="@string/set_time_hint"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:inputType="time"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_note_layout_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_tag" />
+
+                <TextView
+                    android:id="@+id/view_note_set_tag_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:completionThreshold="1"
+                    android:padding="12dp"
+                    android:text="..."
+                    android:textSize="@dimen/abc_text_size_medium_material" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/share_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:src="@android:drawable/ic_menu_share"
+                app:layout_anchor="@id/imageview_view_note"
+                app:layout_anchorGravity="bottom|right|end" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

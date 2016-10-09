@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dut.note.ui.view.ImageStreamView
+        android:id="@+id/view_tile_image_iv_singleimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/view_default_picture" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_tile_image_tv_title"
+            style="@style/TitleLabelPaddingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff" />
+
+        <com.dut.note.ui.view.AutoResizeTextView
+            android:id="@+id/view_tile_image_tv_content"
+            style="@style/TileTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/tile_stub_padding"
+            android:paddingRight="@dimen/tile_stub_padding"
+            android:text="@string/sample_view_tile_image_note_prev" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tile_title_background">#2a88e6</color>
+    <color name="tile_title_background_pressed">#206cb7</color>
+    <color name="tile_date_background">#259720</color>
+    <color name="tile_view_progressbar_background">#ffffff</color>
+    <color name="tile_view_progressbar_process">#00ffe1</color>
+    <color name="tile_background_remain">#62b306</color>
+    <color name="tile_background_done">@color/tile_title_background</color>
+
+    <color name="primary">#1ab750</color>
+    <color name="primary_dark">#0c953b</color>
+    <color name="primary_light">#1ab750</color>
+    <color name="accent">#1ab750</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#414141</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="colorPanelBackground">#fcfcfd</color>
+    <color name="colorPanelBorder">#e2e2e4</color>
+
+    <color name="choose_orange">#FF5722</color>
+    <color name="choose_blue">#2a88e6</color>
+    <color name="choose_green">#62b306</color>
+    <color name="choose_indigo">#3F51B5</color>
+    <color name="choose_red">#F44336</color>
+    <color name="choose_pink">#E91E63</color>
+    <color name="choose_purple">#AB47BC</color>
+    <color name="title_blue">#0277BD</color>
+</resources>

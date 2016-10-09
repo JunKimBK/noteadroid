@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="divider">@color/divider</item>
+    </style>
+
+    <!-- label style -->
+    <style name="LabelStyle">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="TitleLabelStyle" parent="LabelStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/label_title_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    </style>
+    <style name="SubtitleLabelStyle" parent="LabelStyle">
+        <item name="android:textSize">@dimen/label_subtitle_font_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TitleLabelPaddingStyle" parent="TitleLabelStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">@dimen/label_title_padding</item>
+    </style>
+    <style name="SubtitleLabelPaddingStyle" parent="SubtitleLabelStyle">
+        <item name="android:padding">@dimen/label_subtitle_padding</item>
+    </style>
+
+    <!-- tile style -->
+    <style name="TileTextStyle" parent="LabelStyle">
+        <item name="android:gravity">left|top</item>
+    </style>
+    <style name="TileHugeTextStyle" parent="TileTextStyle">
+        <item name="android:textSize">@dimen/tile_stub_huge_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TileSmallTextStyle" parent="TileTextStyle">
+        <item name="android:textSize">@dimen/tile_stub_small_font_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TileSmallTextPaddingStyle" parent="TileSmallTextStyle">
+        <item name="android:padding">@dimen/tile_stub_padding</item>
+    </style>
+    <style name="CheckRemainItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/tile_stub_small_font_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

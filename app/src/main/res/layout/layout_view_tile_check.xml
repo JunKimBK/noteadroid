@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_tile_check_tv_title"
+        style="@style/TitleLabelPaddingStyle"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_tile_check_tv_remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/tile_stub_padding"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/tile_stub_huge_font_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:id="@+id/view_tile_check_tv_remain1"
+                        style="@style/CheckRemainItemStyle"
+                        android:text="1. note content"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:id="@+id/view_tile_check_tv_remain2"
+                        style="@style/CheckRemainItemStyle"
+                        android:text="1. note content"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:id="@+id/view_tile_check_tv_remain3"
+                        style="@style/CheckRemainItemStyle"
+                        android:text="1. note content"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.dut.note.ui.view.AutoResizeTextView
+            android:id="@+id/view_tile_check_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/tile_stub_padding"
+            android:paddingRight="@dimen/tile_stub_padding"
+            android:text="@string/sample_view_tile_check_prev"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

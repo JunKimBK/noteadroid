@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Note Master</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_new_node">Add New</string>
+    <string name="sample_view_tile_check_rate">0/5</string>
+    <string name="sample_view_tile_check_prev">task remain preview 1\ntask remain preview 2\ntask remain preview 3\n...</string>
+    <string name="sample_view_tile_image_note_prev">note preview...</string>
+    <string name="sample_view_tile_sound_time">00:00:00</string>
+    <string name="sample_view_tile_sound_text_prev">Note preview...</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_hint">Title</string>
+    <string name="checkbox_hint">Job description</string>
+    <string name="add_list_hint">Add job</string>
+    <string name="calendar_hint">Date</string>
+    <string name="set_time_hint">Time</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Note</item>
+        <item>My Account</item>
+        <item>Setting</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>Exit</item>
+    </string-array>
+    <string name="title_activity_view_note">Note Details</string>
+    <string name="current_sync_service_name">Dropbox</string>
+    <string name="current_sync_service_account_name">Account:</string>
+    <string name="logout_label">Logout</string>
+    <string name="hint_content">Content</string>
+    <string name="hint_tag">Tag</string>
+    <string name="edit_note">Edit note</string>
+
+    <string name="logout">Logout</string>
+    <string name="about">GNote software is developed by\n\n
+        Tran Xuan Sơn\n
+        Vo Nhu Trong\n
+        Ho Van Ly\n
+        Vo Tung\n
+        Nguyen Viet Hoang</string>
+    <string name="help">All notes data will auto sync with your dropbox account.\nIf you are offline, all changed will auto update later when you are online.\n\nIf you have any question or need more support from develop team, you can contact me via my email(xuanson33bk@gmail.com)</string>
+</resources>

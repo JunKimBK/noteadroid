@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dut.note.ui.view.SquareLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/tile_margin"
+    android:background="@color/tile_background_done"
+    android:orientation="vertical"
+    android:padding="@dimen/tile_padding">
+
+    <ViewStub
+        android:id="@+id/view_tile_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:textColor="@color/common_action_bar_splitter"
+        android:id="@+id/view_tile_time"
+        style="@style/SubtitleLabelStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true" />
+</com.dut.note.ui.view.SquareLinearLayout>

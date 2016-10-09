@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#fff"
+        android:id="@+id/view_tile_text_tv_title"
+        style="@style/TitleLabelPaddingStyle"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.dut.note.ui.view.AutoResizeTextView
+        android:textColor="#fff"
+        android:id="@+id/view_tile_text_tv_content"
+        android:paddingLeft="@dimen/tile_stub_padding"
+        android:paddingRight="@dimen/tile_stub_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        style="@style/TileTextStyle"/>
+</LinearLayout>
